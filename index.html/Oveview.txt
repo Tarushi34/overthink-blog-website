@@ -1,0 +1,178 @@
+  Web Development Assignment: Multipage Blog Website
+Student Name: Tarushi Charak
+Course: Web Development
+Assignment: Design and Create a Multipage Website using HTML and CSS
+Date: November 9, 2025
+Project Title: OverThink Blog Website
+
+Project Overview
+OverThink is a minimal, two-page blog website designed to reflect calmness, creativity, and slow living.
+The purpose of the project was to build a small but elegant website using only HTML and CSS.
+The site includes a homepage with featured articles and a post page with a full-length article layout.
+
+Technologies Used:
+HTML5 – for clean, semantic structure
+CSS3 – for layout, colors, and responsiveness
+Google Fonts – for the Inter font family
+Font Awesome – for social media icons
+
+Files in the Project:
+home.html – main landing page with hero image and featured posts
+post.html – detailed blog post page
+style.css – single shared stylesheet for both pages
+images/ – folder containing hero and content images
+
+Objectives
+The main goals of the OverThink blog project were:
+
+To build a multipage static website with consistent design and structure.
+
+To use semantic HTML tags for accessibility and SEO.
+
+To create a clean and responsive layout using Flexbox and CSS Grid.
+
+To maintain a calm, modern, and balanced visual style.
+
+To organize all styling in one CSS file for simplicity and reusability.
+
+Website Structure
+
+Home Page (home.html)
+
+A fixed header with navigation links and social media icons.
+
+A hero section featuring the website name, tagline, and a background image.
+
+Two featured article cards displayed horizontally.
+
+A responsive grid section displaying more recent articles.
+
+A footer with quick links, resources, and copyright details.
+
+Post Page (post.html)
+
+Same fixed header and footer for design consistency.
+
+A detailed article with headings, inline images, and highlighted takeaways.
+
+A clean layout for comfortable reading.
+
+Folder Structure:
+Blog Website/
+│
+├── home.html
+├── post.html
+├── style.css
+└── images/
+  └── hero.png
+
+Design Choices
+The design emphasizes calmness and clarity.
+Colors: Light gray for the header, deep navy for the footer, and soft neutral tones for text and backgrounds.
+Typography: The Inter font provides clean and modern readability.
+Layout: Flexbox is used for alignment and responsiveness, while CSS Grid handles the article card layouts.
+Spacing: Generous margins and padding ensure comfortable reading.
+Finishing touches: Rounded corners, soft shadows, and subtle hover effects for smooth interaction.
+
+Example of Header HTML:
+
+<header>
+  <nav>
+    <ul class="navMenu">
+      <li><a href="home.html" class="navButton navActive">Home</a></li>
+      <li><a href="post.html" class="navButton">Posts</a></li>
+    </ul>
+    <ul class="socialLinks">
+      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+  </nav>
+</header>
+
+
+Example of CSS for Navigation Buttons:
+
+.navButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease;
+}
+
+.navButton:hover {
+  background: #1f2937;
+  color: #f8fafc;
+  transform: translateY(-2px);
+}
+
+
+Key Features
+
+Fixed Navigation Bar – Always visible while scrolling for easier access.
+
+Responsive Card Layout – Uses CSS Grid with auto-fit and minmax properties.
+
+Hero Section – Built with Flexbox; text on one side, hero image on the other.
+
+Multi-Column Footer – Organized with Grid for clean link sections.
+
+Reusable Components – The same header and footer across both pages.
+
+CSS Organization
+The stylesheet is organized into logical sections for easy editing:
+
+Global Styles – Base resets, body, and font rules.
+
+Header & Navigation – Sticky header and link styles.
+
+Hero Section – Layout and image styling.
+
+Cards – Grid system, padding, and image ratio control.
+
+Footer – Gradient background and multi-column layout.
+
+Post Page – Article typography, image styles, and highlights list.
+
+Example of Responsive Grid CSS:
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.4rem;
+  margin: 4rem auto;
+}
+
+.articleCard img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+Challenges and Solutions
+Challenge 1: Fixed header overlapping the hero section
+Solution: Added top padding to the body to offset the header height.
+
+Challenge 2: Inconsistent image sizes in cards
+Solution: Used object-fit: cover to keep all images uniform without distortion.
+
+Challenge 3: Footer alignment
+Solution: Implemented CSS Grid in the footer with defined column spacing for balance.
+
+Challenge 4: Page consistency
+Solution: Reused the same HTML structure and CSS classes across pages.
+
+Learning Outcomes
+
+Gained a better understanding of Flexbox and CSS Grid for layouts.
+
+Learned to design for consistency across multiple pages.
+
+Practiced writing semantic HTML with clear structure.
+
+Improved CSS organization and reusability.
+
+Understood the importance of spacing, typography, and visual balance.
